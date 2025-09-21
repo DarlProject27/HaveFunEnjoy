@@ -1,0 +1,333 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    flex-wrap: wrap;
+}
+
+/* Layout */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    background: #f9f9fb;
+    color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 230px;
+    min-height: 100vh;
+    background: linear-gradient(360deg, #ffffff, #ffffff);
+    border-right: 1px solid #eee;
+    padding: 20px;
+    position: fixed;
+}
+
+.sidebar .logo {
+    width: 60px;
+    height: 60px;
+    background: #725cad;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #444;
+    transition: 0.3s;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.sidebar ul li a:hover {
+    background: #6c63ff;
+    color: #fff;
+}
+
+/* Content */
+.content {
+    margin-left: 229px;
+    /* padding: 20px; */
+    width: 100%;
+}
+
+/* HERO */
+.hero {
+    display: flex;align-items: stretch;justify-content: center;align-items: baseline;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    /* background: linear-gradient(90deg, #725cad, #8b5cf6); */
+    color: white;
+    padding: 250px;
+    border-radius: px;
+    margin-bottom: 0px;
+    background-image: url("/images/gedung.png");
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevents image tiling if the container is larger than the image */
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 90px;
+    line-height: 1.2;
+}
+
+.hero h1 span {
+    color: #FFD166;
+}
+
+.hero p {
+    margin-top: 15px;
+    max-width: 400px;
+    font-size: 16px;
+}
+
+.hero-img img {
+    width: 670px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.gedung1 {
+  /* position: absolute; */
+  width: 100%;
+  height: 500px;
+
+  /* Gambar belakang */
+  /* background: url("public/images/gedung.png") center/cover no-repeat; */
+
+}
+
+.gedung1 img {
+  position: absolute;
+  z-index: 2; /* biar tetap di atas background */
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* KATEGORI */
+.kategori {
+    text-align: center;
+    margin-bottom: 400px;
+}
+
+.kategori h2 {
+    font-size: 80px;
+    margin-bottom: 90px;
+}
+
+.cards {
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards img{
+  width: 250px;    /* ukuran kotak */
+  height: 250px;
+  margin: 80px auto; /* auto -> center */
+}
+
+.card1 {
+    transform: translateY(200px);
+    background: linear-gradient(360deg, #8ccdeb, #5f8fa5);
+    padding: 30px 40px;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.c1 {
+    color: #ffe3a9;
+}
+
+.card1:hover {
+    transform: translateY(180px);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+}
+
+.card2 {
+    background: linear-gradient(360deg, #725cad, #4e3f77);
+    padding: 30px 40px;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card2:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+}
+
+.card3 {
+    transform: translateY(200px);
+    background: linear-gradient(360deg, #8ccdeb, #5f8fa5);
+    padding: 30px 40px;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.card3:hover:hover {
+    transform: translateY(180px);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+}
+
+.awan img{
+    transform: translateY(-70%);
+    width: 90%;    /* setengah dari lebar container */
+    height: auto;
+    align-items: center;
+    display: flex;
+    z-index: 1;
+    pointer-events: none;  /* tidak bisa diklik */
+    overflow-x: scroll;
+    position: absolute;
+}
+
+/* Partner Search */
+.partner {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.partner h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    width: 80%;
+    max-width: 600px;
+    padding: 14px 20px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.search-box input:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.4);
+}
+
+/* Unggahan */
+.unggahan h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.post-list {
+    display: flex;
+    gap: 20px;
+}
+
+.post {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+    transition: 0.3s;
+}
+
+.post:hover {
+    border-color: #6c63ff;
+    transform: translateY(-5px);
+}
+
+.post h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.post a {
+    background: #00aeff;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #6c63ff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.post a:hover {
+    color: #4638d1;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-img img {
+        margin-top: 20px;
+    }
+    .content {
+        margin-left: 0;
+    }
+    .sidebar {
+        position: relative;
+        width: 100%;
+        min-height: auto;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        overflow-x: auto;
+    }
+    .sidebar ul {
+        display: flex;
+        gap: 15px;
+        margin-left: 20px;
+    }
+    .sidebar h2 {
+        display: none;
+    }
+}
+/* Efek Scroll Reveal */
+section, .card, .post {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+
+section.active, .card.active, .post.active {
+    opacity: 1;
+    transform: translateY(0);
+}
