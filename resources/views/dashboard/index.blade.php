@@ -132,13 +132,13 @@
         <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm transition hover:border-[#6c63ff] hover:shadow-lg hover:-translate-y-1">
           <h3 class="text-lg font-bold mb-2">OWASP API Security Top 10</h3>
           <p class="text-gray-600">Lorem ipsum dolor sit amet...</p>
-          <a href="#" class="inline-block mt-3 px-4 py-2 bg-[#6c63ff] text-white rounded-lg font-medium hover:bg-[#5846d9] transition">Selengkapnya →</a>
+          <a href="/artikel" class="inline-block mt-3 px-4 py-2 bg-[#6c63ff] text-white rounded-lg font-medium hover:bg-[#5846d9] transition">Selengkapnya →</a>
           <p class="mt-3 text-sm text-gray-400">12 September 2025</p>
         </div>
         <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm transition hover:border-[#6c63ff] hover:shadow-lg hover:-translate-y-1">
           <h3 class="text-lg font-bold mb-2">Tips Kolaborasi Tim Efektif</h3>
           <p class="text-gray-600">Lorem ipsum dolor sit amet...</p>
-          <a href="#" class="inline-block mt-3 px-4 py-2 bg-[#6c63ff] text-white rounded-lg font-medium hover:bg-[#5846d9] transition">Selengkapnya →</a>
+          <a href="/artikel" class="inline-block mt-3 px-4 py-2 bg-[#6c63ff] text-white rounded-lg font-medium hover:bg-[#5846d9] transition">Selengkapnya →</a>
           <p class="mt-3 text-sm text-gray-400">15 September 2025</p>
         </div>
       </div>
